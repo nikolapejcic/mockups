@@ -1,0 +1,260 @@
+a, a:link, a:visited{
+    color:#b74c3a;
+}
+
+.no-touch a:hover, a:active{
+    color:#6e2e23;
+}
+
+.button{
+    font-size:.875rem;
+    padding:.5rem 1rem;
+    line-height: 1.33;
+    border-width:1px;
+}
+
+.button--cta{
+    background:#b74c3a;
+    border:solid 1px #b74c3a;
+    color:#fff;
+}
+
+.no-touch .button--cta:hover{
+    background:#6e2e23;
+    border:solid 1px #6e2e23;
+}
+
+.button--neutral{
+    background:#fff;
+    border:solid 1px #5d5d5d;
+    color:#5d5d5d;
+}
+
+.no-touch .button--neutral:hover{
+    border:solid 1px #000;
+    color:#000;
+}
+
+/* Filters */
+
+section.filters{
+    border-bottom:solid 1px #e5e5e5;
+}
+
+section.filters input:focus{
+    outline:none;
+    box-shadow:0 0 2px #dbdbdb;
+}
+
+/* List */
+
+section.list ol li{
+    font-size:1rem;
+}
+
+@media (min-width:56.25rem){
+    section.list ol li{
+        line-height: 1.33;
+    }
+}
+
+section.list ol li.sponsored{
+    background:#fffcf8;
+}
+
+section.list ol li dl div.info dt{
+    font-size:1.25em;
+    font-weight:bold;
+    margin-bottom:.75em;
+}
+
+@media (min-width:37.5rem) {
+    section.list ol li dl div.info dt{
+        margin:0 .5em 0 0;
+    }
+}
+
+section.list ol li dl div.info dt span.marker{
+    font-size:.6em;
+    margin-right:.5em;
+    text-transform:uppercase;   
+}
+
+section.list ol li dl div.info dt a{
+    text-decoration: none;
+}
+
+section.list ol li dl div.info dd.rating, section.list ol li dl div.info dd.food-types{
+    font-size:.75em;
+}
+
+@media (min-width:37.5rem) {
+    section.list ol li dl div.info dd.rating, section.list ol li dl div.info dd.food-types{
+        margin-right:.75em;
+    }
+}
+
+section.list ol li dl div.info dd.rating{
+    font-weight: bold;
+}
+
+section.list ol li dl div.info dd.food-types span{
+    border:solid 1px #e5e5e5;
+    padding:.125em .25em;
+    border-radius:.5em;
+}
+
+section.list ol li dl dd.address{
+    font-size:.75em;
+}
+
+section.list ol li dl dd.description{
+    font-size:.875em;
+    margin:1em 0;
+}
+
+@media (min-width:37.5rem) {
+    section.list ol li dl dd.description{
+        margin-top:.5em;
+    }
+}
+
+section.list ol li p.price{
+    font-size:.875em;
+    text-transform:lowercase;
+    text-align:center;
+    margin:-0.25em 2em 0;
+}
+
+section.list ol li p.price span{
+    font-size:2em;
+    line-height: 1;
+    font-weight: bold;
+}
+
+section.list ol li div button{
+    margin-top:.75em;
+}
+
+/* Profile */
+
+body.profile section h2, body.profile section h3{
+    text-align: center;
+}
+
+body.profile section h2{
+    border-bottom:solid 1px #e5e5e5;
+    padding:2.5rem 0 2rem;
+}
+
+/* Meal Sample Slider */
+
+div#slider1_container{
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 29rem;
+    margin: 0 auto;
+}
+
+div#slider1_container div#slider1_wrapper{
+    cursor: move;
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    width:100%;
+    height:29rem;
+}
+
+div#slider1_container div#slider1_wrapper img, div#slider1_container div#slider1_wrapper h3{
+    position: relative!important;
+}
+
+div#slider1_container div#slider1_wrapper div div{
+    position:relative;
+}
+
+div#slider1_container div#slider1_wrapper div.menu-wrapper{
+    position:absolute;
+    z-index:10;
+    width:50%;
+    height: 100%;
+    margin:0;
+    right:0;
+    top:0;
+    background:rgba(0,0,0,.4);
+}
+
+div#slider1_container div#slider1_wrapper div.menu-wrapper ol.menu{
+    color:#fff;
+    list-style:none;
+    position:absolute;
+    bottom:0;
+    vertical-align: bottom;
+    padding:1rem 2rem;
+}
+
+div#slider1_container div#slider1_wrapper div.menu-wrapper ol.menu li{
+    padding:.25rem 0;
+}
+
+div#slider1_container div#slider1_wrapper div.menu-wrapper ol.menu li.note{
+    font-size:0.875rem;
+    font-style:italic;
+    margin-top:.5rem;
+}
+
+div#slider1_container div#slider1_wrapper div.menu-wrapper ol.menu li.note i{
+    font-size: .5em;
+    position: relative;
+    top:-.5em;
+}
+
+span.jssora01l, span.jssora01r{
+    position: absolute;
+    font-size:4rem;
+    padding:1rem;
+    top:14rem;
+}
+
+.no-touch span.jssora01l, .no-touch span.jssora01r{
+    cursor: pointer;
+}
+
+span.jssora01l{
+    left:-4rem;
+}
+
+span.jssora01r{
+    right:-4rem;
+}
+
+/* Footer */
+
+footer{
+    background:#363636;
+    color:#c8c8c8;
+}
+
+footer a, footer a:link, footer a:visited{
+    color:#c8c8c8;
+}
+
+.no-touch footer a:hover, footer a:active{
+    color:#ececec;
+}
+
+/* Typogrphy */
+
+h1, h2{
+    text-transform: lowercase;
+}
+
+h3{
+    font-size:1.5rem;
+    font-weight: normal;
+}
+
+body.profile h1{
+    text-transform: none;
+}
