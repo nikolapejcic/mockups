@@ -373,7 +373,25 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
-    }
+    },
+
+    // SVG store
+    svgstore: {
+      options: {
+        prefix : 'icon-', // This will prefix each ID
+        svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
+          xmlns: 'http://www.w3.org/2000/svg'
+        }
+      },
+      default : {
+        files: {
+          'app/images/sprite.svg': ['app/images/svg/*.svg'],
+        },
+      },
+      your_target: {
+        // Target-specific file lists and/or options go here.
+      },
+    },
   });
 
 
